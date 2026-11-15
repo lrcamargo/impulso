@@ -2,6 +2,18 @@
 
 Este arquivo registra alterações relevantes para cada versão. A convenção é baseada em versionamento semântico (SemVer), com pré-lançamentos identificados por `alpha` ou `beta`.
 
+## 0.1.0-alpha.3 — correção de alunos cadastrados
+
+### Incluído
+- Edição do nome e do e-mail do aluno pelo professor responsável, com validação e preservação do grupo e da senha.
+- Ao alterar o e-mail, a conta de autenticação também é atualizada pela função de servidor; o professor deve verificar o endereço por outro meio.
+- Script de atualização do banco, função de servidor e testes locais para autorização, sincronização e recuperação de alteração interrompida.
+
+### Atenção
+- A atualização exige aplicar o SQL uma vez no banco existente e publicar a função `edit-student`; enviar arquivos ao GitHub não implanta esses componentes.
+- Não há confirmação automática por e-mail: o professor deve verificar a identidade e o novo endereço. Em caso de falha parcial, repetir com os mesmos dados para concluir.
+- Alterações foram testadas localmente e ainda precisam ser testadas no Supabase real antes de uso com alunos.
+
 ## 0.1.0-alpha.2 — solicitações de acesso e troca de senha inicial
 
 ### Incluído
