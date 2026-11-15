@@ -2,6 +2,16 @@
 
 Este arquivo registra alterações relevantes para cada versão. A convenção é baseada em versionamento semântico (SemVer), com pré-lançamentos identificados por `alpha` ou `beta`.
 
+## 0.1.0-alpha.4 — mostrar e ocultar senhas
+
+### Incluído
+- Botão acessível para mostrar ou ocultar cada senha durante a digitação no login, cadastro de alunos, primeiro acesso, recuperação e alteração de senha.
+- Cada campo começa oculto e pode ser alternado independentemente, sem enviar o formulário.
+
+### Atenção
+- Esta versão contém a funcionalidade de edição da alpha.3. Se ela ainda não estiver instalada, siga a migração e a implantação da função descritas no guia.
+- Mostrar a senha não altera autenticação ou armazenamento: tenha cuidado com pessoas próximas ou compartilhamento de tela.
+
 ## 0.1.0-alpha.3 — correção de alunos cadastrados
 
 ### Incluído

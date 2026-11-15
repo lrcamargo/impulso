@@ -1,6 +1,6 @@
 # Impulso — aplicação web
 
-**Versão atual:** `0.1.0-alpha.3` (pré-lançamento). Consulte [CHANGELOG.md](CHANGELOG.md) e [VERSIONAMENTO.md](VERSIONAMENTO.md).
+**Versão atual:** `0.1.0-alpha.4` (pré-lançamento). Consulte [CHANGELOG.md](CHANGELOG.md) e [VERSIONAMENTO.md](VERSIONAMENTO.md).
 
 Aplicação web para equipes de alunos, demandas SAGA cadastradas manualmente, convites, tarefas, mural e pontuação. A interface usa Vite e JavaScript; o backend usa um projeto próprio Supabase com Auth e PostgreSQL.
 
@@ -32,3 +32,6 @@ Leia [ATUALIZACAO_ALPHA2.md](ATUALIZACAO_ALPHA2.md) antes de atualizar o banco o
 
 ## Atualização alpha.3
 Leia [ATUALIZACAO_ALPHA3.md](ATUALIZACAO_ALPHA3.md) para instalar a edição de alunos no banco e na função de servidor.
+
+## Atualização alpha.4
+Veja [ATUALIZACAO_ALPHA4.md](ATUALIZACAO_ALPHA4.md) para instalar o botão de mostrar senha e, se necessário, a edição de alunos da versão anterior.
