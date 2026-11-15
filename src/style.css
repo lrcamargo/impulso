@@ -9,3 +9,5 @@
 
 /* Conquista pessoal; não altera a pontuação de atividades. */
 .first-medal{display:flex;align-items:center;gap:18px;background:#fff9e8;border:1px solid #e9d59a}.first-medal-icon{display:grid;place-items:center;flex:none;width:64px;height:64px;border-radius:50%;background:#f8e6aa;font-size:36px}.first-medal h2{margin:3px 0}.first-medal p{margin:5px 0 0;color:#52695e}
+
+.medal-art{width:68px;height:80px;flex:none}.profile-card{display:flex;gap:20px;align-items:center}.profile-avatar{display:grid;place-items:center;border-radius:50%;width:90px;height:90px;flex:none;background:#e6f2e8;font-size:46px}.medal-small{margin-top:16px;padding:16px;border-radius:12px}.medal-small h3{margin:0}.medal-small p{margin:6px 0 0}

@@ -1,6 +1,6 @@
 {
   "name": "impulso-projetos",
-  "version": "0.1.0-alpha.6",
+  "version": "0.1.0-alpha.7",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node tests/db.test.mjs && node tests/access-requests.test.mjs && node tests/edit-student.test.mjs && node tests/groups-and-projects.test.mjs && node tests/first-access-medal.test.mjs"
+    "test": "node tests/db.test.mjs && node tests/access-requests.test.mjs && node tests/edit-student.test.mjs && node tests/groups-and-projects.test.mjs && node tests/first-access-medal.test.mjs && node tests/profile-general-tasks.test.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.0"

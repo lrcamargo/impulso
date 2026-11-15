@@ -2,6 +2,16 @@
 
 Este arquivo registra alterações relevantes para cada versão. A convenção é baseada em versionamento semântico (SemVer), com pré-lançamentos identificados por `alpha` ou `beta`.
 
+## 0.1.0-alpha.7 — perfil, avaliação e tarefas gerais
+
+- Perfil do aluno com apelido de exibição, avatar pronto, grupo, troca de senha e medalha de primeiro acesso.
+- Tarefas gerais para todos os grupos, com situação e entrega independentes para cada grupo, inclusive futuros. A tarefa vinculada à demanda continua disponível.
+- Aprovação ou não aprovação de demanda, com motivo obrigatório na reprovação e histórico por reenvio.
+- Validação de novos links de demandas industriais na Saga, inclusive no banco, preservando links já cadastrados; correção de texto para “na Saga”.
+- Tratamento defensivo de nome ausente e outros dados incompletos, para evitar erros de interface; ainda é necessário reproduzir e conferir o problema relatado no site real.
+- Backlog e materiais de apoio atualizados. Novas medalhas, regras de concessão automática/manual e modo noturno seguem pendentes.
+- A atualização exige SQL alpha.7; testes locais não substituem validação no projeto real.
+
 ## 0.1.0-alpha.6 — medalha de primeiro acesso
 
 - Medalha individual exibida na visão geral do aluno após confirmação da troca de senha inicial; não altera pontuação.
