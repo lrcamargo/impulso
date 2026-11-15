@@ -2,9 +2,9 @@
 
 ## Versão inicial
 
-A versão deste pacote é **0.1.0-alpha.4**. É uma versão preliminar: o banco real, o e-mail e a hospedagem ainda precisam ser configurados e validados. A versão oficial fica em `package.json` e `package-lock.json`; `CHANGELOG.md` descreve o que mudou. Não confunda a versão com o endereço do site ou com o histórico de commits do Git.
+A versão deste pacote é **0.1.0-alpha.5**. É uma versão preliminar: o banco real, o e-mail e a hospedagem ainda precisam ser configurados e validados. A versão oficial fica em `package.json` e `package-lock.json`; `CHANGELOG.md` descreve o que mudou. Não confunda a versão com o endereço do site ou com o histórico de commits do Git.
 
-A tag correspondente, quando você decidir registrar esse ponto, é `v0.1.0-alpha.4`. A tag ainda não foi criada no GitHub por este pacote.
+A tag correspondente, quando você decidir registrar esse ponto, é `v0.1.0-alpha.5`. A tag ainda não foi criada no GitHub por este pacote.
 
 ## Fluxo recomendado
 

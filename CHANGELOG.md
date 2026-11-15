@@ -2,6 +2,17 @@
 
 Este arquivo registra alterações relevantes para cada versão. A convenção é baseada em versionamento semântico (SemVer), com pré-lançamentos identificados por `alpha` ou `beta`.
 
+## 0.1.0-alpha.5 — grupos e demandas pelos alunos
+
+### Incluído
+- Ao criar o grupo, o aluno pode pesquisar e selecionar vários colegas, inclusive em buscas diferentes; os colegas recebem convites e só entram ao aceitar.
+- A seleção trata falhas parciais e permite convidar mais tarde. Na página do grupo, o aluno pode cadastrar a demanda por nome e link; a professora complementa os dados.
+- Testes de banco locais para convite, resposta, isolamento entre grupos e permissão de complementar demanda.
+
+### Atenção
+- O fluxo de grupos e demandas usa o backend existente; esta melhoria não exige SQL novo. O pacote é cumulativo e a edição de alunos da alpha.3 requer SQL e Edge Function quando ainda não instalados.
+- Os testes foram locais e de navegador com rede simulada, não no Supabase ou site reais.
+
 ## 0.1.0-alpha.4 — mostrar e ocultar senhas
 
 ### Incluído
