@@ -1,25 +1,28 @@
-# impulso
+# Impulso — aplicação web
 
-Olá, boa noite!
-Vamos criar um projeto chamado impulso. Quero hospedá-lo aqui, integrar com github e vou começar a enviar os códigos por lá.
+**Versão atual:** `0.1.0-alpha.1` (pré-lançamento). Consulte [CHANGELOG.md](CHANGELOG.md) e [VERSIONAMENTO.md](VERSIONAMENTO.md).
 
-This project was built with [Lovable](https://lovable.dev).
+Aplicação web para equipes de alunos, demandas SAGA cadastradas manualmente, convites, tarefas, mural e pontuação. A interface usa Vite e JavaScript; o backend usa um projeto próprio Supabase com Auth e PostgreSQL.
 
-## Build with Lovable
+## Primeiro passo
+Siga **[GUIA_SUPABASE.md](GUIA_SUPABASE.md)**. Sem a configuração do banco e da chave pública, o aplicativo apresenta uma tela de configuração; não há modo demonstrativo com dados reais neste pacote.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/b94deb91-ba3d-426e-8d0b-b0afa18fcf86).
+## Arquivos principais
+- `src/main.js`, `src/style.css`: interface e integração com Supabase.
+- `src/config.js`: URL e chave publicável, preenchidas pelo responsável. Não inserir segredos.
+- `supabase/schema.sql`: tabelas privadas, regras e função de acesso ao banco.
+- `tests/db.test.mjs`: testes de banco executados localmente com PostgreSQL emulado PGlite.
+- `GUIA_SUPABASE.md`: contas, SQL, professor, SMTP e testes antes da utilização.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## Executar localmente
+Com Node.js 20 ou superior:
 
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
+npm ci
 npm run dev
 ```
+
+Defina as credenciais públicas em `src/config.js` conforme o guia ou em um arquivo `.env` local a partir de `.env.example`. Para compilar, `npm run build`; para executar os testes locais, `npm test`. O resultado da compilação fica em `dist/`.
+
+## Atenção
+A aplicação precisa de um Supabase real configurado. O pacote não contém dados ou usuários do protótipo local anterior. Não contém senha, chave service_role ou SMTP. Testes locais não substituem revisão independente, testes reais de permissões e validação institucional antes de dados de alunos. A compatibilidade com o seu projeto e a hospedagem não foi testada.
