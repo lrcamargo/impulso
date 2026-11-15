@@ -2,6 +2,13 @@
 
 Este arquivo registra alterações relevantes para cada versão. A convenção é baseada em versionamento semântico (SemVer), com pré-lançamentos identificados por `alpha` ou `beta`.
 
+## 0.1.0-alpha.6 — medalha de primeiro acesso
+
+- Medalha individual exibida na visão geral do aluno após confirmação da troca de senha inicial; não altera pontuação.
+- Registro no banco com retroatividade conservadora quando há evidências recuperáveis e orientação para conferência dos demais casos.
+- Backlog, textos para issues e rascunho para Classroom atualizados.
+- Exige aplicar uma vez o SQL alpha.6. Testes apenas locais; não foi instalado no Supabase real.
+
 ## 0.1.0-alpha.5 — grupos e demandas pelos alunos
 
 ### Incluído

@@ -18,19 +18,21 @@ Registro inicial do que já foi feito e do que falta verificar, organizado para 
 | Cadastro de aluno pela professora | Confirmado em uso | Após a correção da função de servidor, a professora informou que deu certo. |
 | Solicitação de acesso com aprovação ou recusa | Preparado na alpha.2; teste real a confirmar | A solicitação não cria a conta automaticamente. |
 | Troca obrigatória da senha inicial | Preparado na alpha.2; teste real a confirmar | A mesma senha inicial para todos foi escolhida, mas traz risco antes do primeiro acesso. |
-| Edição de nome e e-mail do aluno | Preparado na alpha.3; instalação a confirmar | Alterar o e-mail também altera o login. Depende de SQL e da função `edit-student`. |
-| Mostrar e ocultar senha | Preparado na alpha.4; instalação a confirmar | Botões nos campos de senha. |
-| Grupos criados por alunos e convites | Preparado na alpha.5; instalação a confirmar | Busca e seleção de colegas, com aceite ou recusa na plataforma. |
+| Edição de nome e e-mail do aluno | Arquivos alpha.3 no repositório; SQL e função a confirmar | Alterar o e-mail também altera o login. Depende de SQL e da função `edit-student`. |
+| Mostrar e ocultar senha | Arquivos alpha.4 no repositório; publicação a confirmar | Botões nos campos de senha. |
+| Grupos criados por alunos e convites | Arquivos alpha.5 no repositório; publicação a confirmar | Busca e seleção de colegas, com aceite ou recusa na plataforma. |
 | Demanda por nome e link, complementada pela professora | Preparado na alpha.5; teste real a confirmar | Cadastro manual; sem integração automática com SAGA e sem campo de etapa. |
 | Visão da professora de equipes e demandas | Preparado; teste real a confirmar | Menu **Equipes** e menu **Demandas**. A professora complementa as informações da demanda. |
 | Atividades, prazos e registro de entregas | Preparado; teste real a confirmar | É possível registrar links e observações. |
 | Mural e pontuação | Preparado; teste real a confirmar | Pontos são dados ao marcar entrega, sem aprovação da professora nesta versão. |
 | Testes locais | Concluído para as versões preparadas | Testes de banco e navegador simulado não substituem testes no Supabase e site reais. |
 
+| Medalha de primeiro acesso | Preparada na alpha.6; instalação a confirmar | Surge após troca de senha; retroatividade automática limitada aos registros com evidências recuperáveis. |
+
 ## A fazer — prioridade alta
 
-- [ ] **Confirmar quais versões estão instaladas.** A alpha.2 foi usada; não há confirmação sobre alpha.3, alpha.4 ou alpha.5.
-- [ ] **Instalar e testar a alpha.5**, se ainda não instalada, preservando as configurações. Ela inclui alpha.3 e alpha.4. Para edição de alunos, seguir os passos de SQL e da função da alpha.3, se ainda não feitos. Não executar novamente o schema inicial no banco existente.
+- [ ] **Confirmar quais versões estão instaladas.** A alpha.2 foi usada. O repositório contém alpha.3 e alpha.4; ainda é preciso confirmar publicação e componentes do Supabase. A alpha.5 também está no repositório; a publicação da alpha.5 e a instalação da alpha.6 não foram confirmadas.
+- [ ] **Instalar e testar a alpha.6**, preservando as configurações. Ela inclui a alpha.5 e as alterações anteriores. Para edição de alunos, seguir os passos de SQL e da função da alpha.3, se ainda não feitos. Não executar novamente o schema inicial no banco existente.
 - [ ] **Testar grupos com contas de teste:** criar grupo, pesquisar e convidar colegas, aceitar e recusar, conferir integrantes e pendências.
 - [ ] **Testar demandas com contas de teste:** aluno cadastra nome e link; professora visualiza e complementa todos os campos; integrante visualiza o resultado.
 - [ ] **Conferir privacidade e permissões no projeto real:** aluno fora do grupo não deve ver grupo nem demanda; aluno não deve ver e-mail dos colegas ou editar campos exclusivos da professora. Verificar também acesso direto à API.
@@ -52,10 +54,17 @@ Os itens abaixo serão detalhados antes da implementação. Algumas funções b�
 
 - [ ] **Criação de tarefas:** definir como as tarefas deverão ser criadas e acompanhadas. Já existe um cadastro básico de atividades e prazos; verificar o que precisa ser ampliado.
 - [ ] **Criação de pontuação:** definir as regras desejadas. Já existe uma pontuação básica de 100 pontos ao marcar uma atividade como entregue, sem aprovação da professora; avaliar como deve evoluir.
-- [ ] **Criação de medalhas:** definir tipos, critérios para conquista e visualização.
+- [ ] **Criação de medalhas:** além da primeira medalha preparada na alpha.6, definir os próximos tipos, critérios para conquista e visualização.
 - [ ] **Criação de importação de usuários:** definir formato dos dados, validações e como será feito o cadastro seguro dos alunos.
 - [ ] **Criação de sistema de entregas de atividades:** definir o fluxo desejado, inclusive formatos e necessidade de avaliação. Atualmente há registro básico de situação, link e observações, mas não um fluxo de aprovação de entregas.
 - [ ] **Análise de recursos extras:** levantar possibilidades e decidir com a professora quais fazem sentido para a plataforma.
+
+## Novos itens solicitados — a fazer
+
+- [ ] **Pesquisar aluno/grupo:** definir como a professora poderá localizar alunos e grupos. Já existe busca de colegas para convite; esta nova busca será planejada para o acompanhamento.
+- [ ] **Identificar alunos sem grupo para a professora:** criar uma forma de visualizar ou filtrar alunos que ainda não participam de grupo.
+- [ ] **Modo noturno:** planejar e implementar uma opção de visualização escura.
+- [ ] **Conferir medalhas retroativas:** verificar alunos antigos cuja troca não pôde ser comprovada automaticamente e, se apropriado, seguir o procedimento do guia alpha.6.
 
 ## Ideias futuras — ainda não aprovadas
 
@@ -74,6 +83,7 @@ Os itens abaixo serão detalhados antes da implementação. Algumas funções b�
 - **alpha.2:** cadastro de alunos com senha inicial, troca obrigatória e solicitações de acesso.
 - **alpha.3:** edição de nome e e-mail do aluno.
 - **alpha.4:** mostrar/ocultar senhas.
-- **alpha.5:** fluxo facilitado para grupos, convites e cadastro da demanda. O pacote entregue é cumulativo a partir da alpha.2.
+- **alpha.5:** fluxo facilitado para grupos, convites e cadastro da demanda.
+- **alpha.6:** primeira medalha e documentação atualizada; usa o repositório alpha.5 como base. A instalação real ainda não foi confirmada.
 
 Este backlog é um documento de trabalho; nenhum item pendente foi implantado ou aprovado apenas por estar listado aqui.
