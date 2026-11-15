@@ -1,6 +1,6 @@
 # Impulso — aplicação web
 
-**Versão atual:** `0.1.0-alpha.1` (pré-lançamento). Consulte [CHANGELOG.md](CHANGELOG.md) e [VERSIONAMENTO.md](VERSIONAMENTO.md).
+**Versão atual:** `0.1.0-alpha.2` (pré-lançamento). Consulte [CHANGELOG.md](CHANGELOG.md) e [VERSIONAMENTO.md](VERSIONAMENTO.md).
 
 Aplicação web para equipes de alunos, demandas SAGA cadastradas manualmente, convites, tarefas, mural e pontuação. A interface usa Vite e JavaScript; o backend usa um projeto próprio Supabase com Auth e PostgreSQL.
 
@@ -26,3 +26,6 @@ Defina as credenciais públicas em `src/config.js` conforme o guia ou em um arqu
 
 ## Atenção
 A aplicação precisa de um Supabase real configurado. O pacote não contém dados ou usuários do protótipo local anterior. Não contém senha, chave service_role ou SMTP. Testes locais não substituem revisão independente, testes reais de permissões e validação institucional antes de dados de alunos. A compatibilidade com o seu projeto e a hospedagem não foi testada.
+
+## Atualização alpha.2
+Leia [ATUALIZACAO_ALPHA2.md](ATUALIZACAO_ALPHA2.md) antes de atualizar o banco ou publicar o site. A migração é manual e a função de servidor também deve ser implantada.

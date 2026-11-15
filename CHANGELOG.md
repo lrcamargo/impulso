@@ -2,6 +2,20 @@
 
 Este arquivo registra alterações relevantes para cada versão. A convenção é baseada em versionamento semântico (SemVer), com pré-lançamentos identificados por `alpha` ou `beta`.
 
+## 0.1.0-alpha.2 — solicitações de acesso e troca de senha inicial
+
+### Incluído
+- Solicitações de acesso sem criação automática de conta; o professor aprova ou recusa.
+- Cadastro de aluno pelo professor com senha inicial, por uma função de servidor autenticada.
+- Exigência de troca da senha inicial, diferente da senha anterior, antes de acessar as funções do grupo.
+- Script de atualização do banco existente e novos testes locais de acesso e autenticação.
+
+### Atenção
+- A atualização depende da aplicação manual do SQL, da publicação da função no Supabase e do bloqueio de inscrições públicas diretas no Auth. Não altera o banco automaticamente.
+- O fluxo de solicitação pública foi projetado para um único professor e ainda não tem CAPTCHA. Avalie proteção contra spam antes de abrir para uso amplo.
+- Uma senha inicial igual para a turma permite tomada de conta antes do primeiro acesso, mesmo com troca obrigatória. Prefira senhas individuais.
+- Testado localmente; implantação real e revisão de segurança ainda são necessárias.
+
 ## 0.1.0-alpha.1 — versão inicial para configuração
 
 ### Incluído
