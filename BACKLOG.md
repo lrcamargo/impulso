@@ -31,7 +31,9 @@ Registro inicial do que já foi feito e do que falta verificar, organizado para 
 ## A fazer — prioridade alta
 
 - [ ] **Confirmar quais versões estão instaladas.** A alpha.2 foi usada. O repositório contém alpha.3 e alpha.4; ainda é preciso confirmar publicação e componentes do Supabase. A alpha.6 está no repositório; a professora informou ter aplicado seu SQL e corrigido a medalha.
-- [ ] **Instalar e testar a alpha.7**, preservando as configurações e seguindo o guia e o SQL novos. Para edição de alunos, seguir os passos de SQL e da função da alpha.3, se ainda não feitos. Não executar novamente o schema inicial no banco existente.
+- [x] **Instalar a alpha.7**: a professora informou que atualizou os arquivos e executou o SQL. Os testes adicionais no site real continuam pendentes.
+- [x] **SQL da alpha.8 executado:** a professora confirmou; ela não conseguiu baixar os arquivos do site. Não execute novamente esse SQL.
+- [ ] **Instalar e testar a alpha.9:** contém os arquivos da alpha.8 e precisa apenas do novo SQL alpha.9, depois de verificar os pré-requisitos.
 - [ ] **Testar grupos com contas de teste:** criar grupo, pesquisar e convidar colegas, aceitar e recusar, conferir integrantes e pendências.
 - [ ] **Testar demandas com contas de teste:** aluno cadastra nome e link; professora visualiza e complementa todos os campos; integrante visualiza o resultado.
 - [ ] **Conferir privacidade e permissões no projeto real:** aluno fora do grupo não deve ver grupo nem demanda; aluno não deve ver e-mail dos colegas ou editar campos exclusivos da professora. Verificar também acesso direto à API.
@@ -45,14 +47,34 @@ Registro inicial do que já foi feito e do que falta verificar, organizado para 
 
 - [x] A professora confirmou login, logout e troca de senha de uma conta de teste.
 - [x] A professora executou o SQL da alpha.6 e informou que a medalha passou a funcionar.
-- [ ] Investigar e testar novamente a segunda conta que mostrou `Cannot read properties of undefined (reading 'slice')`. A alpha.7 evita falhas de exibição em alguns campos ausentes, mas a causa real ainda não foi confirmada.
-- [ ] Instalar e validar em ambiente real a alpha.7: perfil com apelido/avatar, medalhas no perfil, tarefas gerais, avaliação com feedback/histórico e link de demanda.
-- [ ] Criar medalhas para cadastrar demanda, ter demanda aprovada e entrar em grupo, com imagens finais fornecidas pela professora.
-- [ ] Definir e implementar concessão de medalhas automática ou sujeita à aprovação/liberação da professora, inclusive para determinadas atividades.
+- [x] A professora informou que conseguiu acessar a segunda conta. O motivo exato do erro anterior não foi confirmado; manter monitoramento.
+- [ ] Validar em ambiente real a alpha.7 já instalada: perfil com apelido/avatar, medalhas no perfil, atividades, avaliação com feedback/histórico e link de demanda.
+- [ ] Validar no site real as medalhas de entrar em grupo, cadastrar demanda e ter demanda aprovada, com as imagens fornecidas; preparadas na alpha.9.
+- [ ] Testar a concessão de medalhas de atividade automática ou sujeita a aprovação, preparada na alpha.8/9. Medalhas específicas por tarefas ainda precisam ser planejadas.
 - [ ] Suportar demanda do tipo desafio: obter exemplos e definir regras; por enquanto o cadastro aceita o formato de demanda industrial informado.
 - [ ] Planejar novidades ao acessar: registro de versões publicadas, aviso por usuário e opção “já vi”; preservar privacidade e prever volta para consultar novidades anteriores.
 - [ ] Avaliar melhorias de perfil como foto opcional, acessibilidade dos avatares e preferências de privacidade; avaliar limites do plano antes de armazenar imagens de alunos.
-- [ ] Evoluir tarefas gerais: edição, cancelamento, avaliação/aprovação e eventual concessão de pontos/medalhas. A alpha.7 registra entregas independentes, mas ainda não cria medalhas para tarefas.
+- [ ] Evoluir atividades: cancelamento, avaliação da entrega e regras adicionais de pontos/medalhas. A alpha.8 prepara edição e medalhas por atividade; tarefas individuais ainda não dão medalhas.
+
+
+## Solicitações mais recentes — atividades, tarefas, medalhas e Drive
+
+- [ ] **Google Drive:** implementar upload real de arquivos/fotos para uma pasta por atividade, com nome `grupo_atividade_data`, extensão preservada e proteção contra colisões; binários no Drive, não no banco. A conexão do Drive nesta conversa não configura a integração do site. Ver `PLANO_GOOGLE_DRIVE.md`.
+- [ ] Definir limites e tipos de arquivo, acesso de professora/grupo, proteção contra arquivos maliciosos, retentativas, limpeza e limites/quota do Drive antes de habilitar upload.
+- [ ] Testar no Supabase e site reais a alpha.8: somente professora cria atividade; integrantes criam tarefas e atribuem colegas do próprio grupo; alunos veem apenas seu grupo.
+- [ ] Testar medalhas de atividade: criação e edição, vínculo, automática ao registrar entrega, solicitação que exige aprovação/recusa, concessão manual e isolamento entre professores e alunos.
+- [ ] Avaliar versões futuras: alterar destinatário da atividade, retroatividade de medalhas, mudança de grupo e eventual revogação; na alpha.8 os membros atuais são considerados ao registrar entrega e medalhas já dadas não são revogadas automaticamente.
+- [x] A professora informou que conseguiu entrar na segunda conta; a origem técnica da falha anterior não foi confirmada.
+- [ ] Antes de convidar toda a turma, fazer piloto controlado: login e troca de senha em duas contas, grupo e aceite de convite, demanda, privacidade e teste das regras novas. A senha inicial compartilhada ainda pode permitir acesso por terceiro antes do primeiro acesso.
+
+
+## Solicitações mais recentes — alpha.9
+
+- [ ] **Excluir os dois usuários de teste e tudo relacionado a eles:** implementação ainda pendente. Deve identificar e remover com segurança contas de autenticação, perfis, grupos, demandas e registros exclusivos de teste, verificando previamente que não há pessoas ou dados reais compartilhados. Exigir prévia, confirmação forte, backup e tratamento de falha parcial; não executar automaticamente. Ver `PLANO_EXCLUSAO_TESTES.md`.
+- [ ] Testar entregas por grupo e individuais com contas de teste; confirmar que a lista acompanha os integrantes atuais e que a professora vê os status corretos.
+- [ ] Testar painel individual do aluno, incluindo perfil, grupo, demanda, medalhas, links e observações de entregas, além do isolamento entre professoras.
+- [ ] Testar as quatro artes recebidas e concessão das medalhas por primeiro acesso, entrada em grupo, cadastro e aprovação da demanda. A retroatividade dos três marcos de grupo/demanda usa apenas vínculos atuais; verificar exceções.
+- [ ] Entregar em cada versão os textos de issues, release e backlog atualizado.
 
 ## A fazer — operação e melhorias a decidir
 
@@ -98,6 +120,8 @@ Os itens abaixo serão detalhados antes da implementação. Algumas funções b�
 - **alpha.4:** mostrar/ocultar senhas.
 - **alpha.5:** fluxo facilitado para grupos, convites e cadastro da demanda.
 - **alpha.6:** primeira medalha; professora informou ter executado o SQL e corrigido a medalha.
-- **alpha.7:** perfil, avaliação de demanda, validação do link e tarefas gerais preparados; instalação e teste real pendentes.
+- **alpha.7:** perfil, avaliação de demanda, validação do link e tarefas gerais; professora confirmou arquivos e SQL instalados, outros testes reais pendentes.
+- **alpha.8:** SQL executado segundo relato; arquivos do site incluídos na alpha.9.
+- **alpha.9:** entregas por aluno ou grupo, painel da professora e imagens das medalhas preparados; ainda não instalados nem testados no ambiente real.
 
 Este backlog é um documento de trabalho; nenhum item pendente foi implantado ou aprovado apenas por estar listado aqui.

@@ -11,3 +11,7 @@
 .first-medal{display:flex;align-items:center;gap:18px;background:#fff9e8;border:1px solid #e9d59a}.first-medal-icon{display:grid;place-items:center;flex:none;width:64px;height:64px;border-radius:50%;background:#f8e6aa;font-size:36px}.first-medal h2{margin:3px 0}.first-medal p{margin:5px 0 0;color:#52695e}
 
 .medal-art{width:68px;height:80px;flex:none}.profile-card{display:flex;gap:20px;align-items:center}.profile-avatar{display:grid;place-items:center;border-radius:50%;width:90px;height:90px;flex:none;background:#e6f2e8;font-size:46px}.medal-small{margin-top:16px;padding:16px;border-radius:12px}.medal-small h3{margin:0}.medal-small p{margin:6px 0 0}
+
+.activity-box{border:1px solid #e2ebe5;border-radius:12px;padding:18px;margin:14px 0}.activity-box h3{margin:0 0 6px}.activity-box p{line-height:1.5}.subtasks{border-top:1px solid #edf2ef;margin-top:14px;padding-top:12px}.subtasks .btn{margin-top:8px}
+
+.medal-image{display:block;width:82px;height:82px;object-fit:contain;flex:none}.medal-image.small{width:56px;height:56px}.student-report p{line-height:1.5;overflow-wrap:anywhere}.activity-box details{margin:10px 0;color:#426a59}.activity-box details summary{cursor:pointer;font-weight:700}

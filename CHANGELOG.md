@@ -2,6 +2,24 @@
 
 Este arquivo registra alterações relevantes para cada versão. A convenção é baseada em versionamento semântico (SemVer), com pré-lançamentos identificados por `alpha` ou `beta`.
 
+## 0.1.0-alpha.9 — entregas, painel de alunos e medalhas
+
+- Seleção por atividade entre entrega por grupo ou confirmação de cada integrante atual, com acompanhamento de alunos e grupos pela professora.
+- Painel da professora por aluno com perfil, grupo, demanda, medalhas e situação das atividades e links.
+- Uso das quatro imagens fornecidas para as medalhas de Primeiro Acesso, Primeiro Grupo, Demanda Cadastrada e Demanda Aprovada; retroatividade limitada a grupos/demandas atuais comprováveis.
+- Inclui os arquivos da alpha.8. A professora informou que o SQL alpha.8 já está instalado; a alpha.9 usa novo SQL e não deve reaplicar o anterior.
+- Testes locais passaram; ainda precisa ser instalada e testada no ambiente real.
+- Exclusão segura dos usuários de teste e seus dados, e upload para Google Drive, permanecem pendentes. Nenhuma conta ou dado real foi apagado.
+
+## 0.1.0-alpha.8 — atividades, tarefas do grupo e medalhas
+
+- Somente a professora cria e edita atividades. O aluno pode criar tarefas em uma atividade para seu grupo e atribuí-las a colegas integrantes.
+- Visão de atividades unificada para o aluno e cópia dos registros anteriores para o novo modelo, sem exclusão dos dados antigos.
+- Cadastro, edição, vínculo e concessão de medalhas por atividade, de modo automático ou mediante aprovação, além de atribuição manual pela professora.
+- A medalha é processada ao marcar a atividade como entregue para os integrantes naquele momento. Não há revogação automática nem aplicação retroativa ao alterar a medalha.
+- Atualização exige SQL e preservação de backup. Testes locais; ainda requer validação real.
+- Upload para Google Drive **não foi implementado** nesta versão; há apenas planejamento. Entregas podem ser registradas por link.
+
 ## 0.1.0-alpha.7 — perfil, avaliação e tarefas gerais
 
 - Perfil do aluno com apelido de exibição, avatar pronto, grupo, troca de senha e medalha de primeiro acesso.
