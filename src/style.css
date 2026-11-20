@@ -15,3 +15,5 @@
 .activity-box{border:1px solid #e2ebe5;border-radius:12px;padding:18px;margin:14px 0}.activity-box h3{margin:0 0 6px}.activity-box p{line-height:1.5}.subtasks{border-top:1px solid #edf2ef;margin-top:14px;padding-top:12px}.subtasks .btn{margin-top:8px}
 
 .medal-image{display:block;width:82px;height:82px;object-fit:contain;flex:none}.medal-image.small{width:56px;height:56px}.student-report p{line-height:1.5;overflow-wrap:anywhere}.activity-box details{margin:10px 0;color:#426a59}.activity-box details summary{cursor:pointer;font-weight:700}
+
+.score-summary{display:flex;gap:48px;align-items:center;flex-wrap:wrap}.score-summary div{display:grid;gap:6px}.score-summary b{font-size:12px;color:#52695e}.score-summary strong{font-size:20px;color:#155e4c}

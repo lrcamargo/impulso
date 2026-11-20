@@ -1,6 +1,6 @@
 # Impulso — aplicação web
 
-**Versão atual:** `0.1.0-alpha.9` (pré-lançamento). Consulte [CHANGELOG.md](CHANGELOG.md) e [VERSIONAMENTO.md](VERSIONAMENTO.md).
+**Versão atual:** `0.1.0-alpha.10` (pré-lançamento). Consulte [CHANGELOG.md](CHANGELOG.md) e [VERSIONAMENTO.md](VERSIONAMENTO.md).
 
 Aplicação web para equipes de alunos, demandas SAGA cadastradas manualmente, convites, tarefas, mural e pontuação. A interface usa Vite e JavaScript; o backend usa um projeto próprio Supabase com Auth e PostgreSQL.
 
@@ -50,3 +50,6 @@ Leia [ATUALIZACAO_ALPHA8.md](ATUALIZACAO_ALPHA8.md) para atualizar atividades, t
 
 ## Atualização alpha.9
 Leia [ATUALIZACAO_ALPHA9.md](ATUALIZACAO_ALPHA9.md) antes de instalar. Inclui a interface da alpha.8, entregas individuais ou por grupo e painel de alunos. Exclusão de usuários e upload ao Drive ainda não foram implementados.
+
+## Atualização alpha.10
+Leia [ATUALIZACAO_ALPHA10.md](ATUALIZACAO_ALPHA10.md) antes de instalar a pontuação configurável.

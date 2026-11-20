@@ -24,7 +24,7 @@ Registro inicial do que já foi feito e do que falta verificar, organizado para 
 | Demanda por nome e link, complementada pela professora | Preparado na alpha.5; teste real a confirmar | Cadastro manual; sem integração automática com SAGA e sem campo de etapa. |
 | Visão da professora de equipes e demandas | Preparado; teste real a confirmar | Menu **Equipes** e menu **Demandas**. A professora complementa as informações da demanda. |
 | Atividades, prazos e registro de entregas | Preparado; teste real a confirmar | É possível registrar links e observações. |
-| Mural e pontuação | Preparado; teste real a confirmar | Pontos são dados ao marcar entrega, sem aprovação da professora nesta versão. |
+| Mural e pontuação | Preparado; teste real a confirmar | Na alpha.10, pontos são definidos pela professora e concedidos ao registrar a entrega, sem depender de aprovação da medalha. |
 | Testes locais | Concluído para as versões preparadas | Testes de banco e navegador simulado não substituem testes no Supabase e site reais. |
 | Medalha de primeiro acesso | SQL alpha.6 aplicado e medalha corrigida, segundo relato | Retroatividade automática limitada aos registros com evidências recuperáveis. |
 
@@ -33,7 +33,8 @@ Registro inicial do que já foi feito e do que falta verificar, organizado para 
 - [ ] **Confirmar quais versões estão instaladas.** A alpha.2 foi usada. O repositório contém alpha.3 e alpha.4; ainda é preciso confirmar publicação e componentes do Supabase. A alpha.6 está no repositório; a professora informou ter aplicado seu SQL e corrigido a medalha.
 - [x] **Instalar a alpha.7**: a professora informou que atualizou os arquivos e executou o SQL. Os testes adicionais no site real continuam pendentes.
 - [x] **SQL da alpha.8 executado:** a professora confirmou; ela não conseguiu baixar os arquivos do site. Não execute novamente esse SQL.
-- [ ] **Instalar e testar a alpha.9:** contém os arquivos da alpha.8 e precisa apenas do novo SQL alpha.9, depois de verificar os pré-requisitos.
+- [x] **SQL da alpha.9 executado:** confirmado pela professora. O repositório contém os arquivos da alpha.9; demais testes reais continuam pendentes.
+- [ ] **Instalar e testar a alpha.10:** verificar o SQL alpha.9, fazer backup e aplicar somente o novo SQL alpha.10, seguido dos arquivos do site.
 - [ ] **Testar grupos com contas de teste:** criar grupo, pesquisar e convidar colegas, aceitar e recusar, conferir integrantes e pendências.
 - [ ] **Testar demandas com contas de teste:** aluno cadastra nome e link; professora visualiza e complementa todos os campos; integrante visualiza o resultado.
 - [ ] **Conferir privacidade e permissões no projeto real:** aluno fora do grupo não deve ver grupo nem demanda; aluno não deve ver e-mail dos colegas ou editar campos exclusivos da professora. Verificar também acesso direto à API.
@@ -76,6 +77,14 @@ Registro inicial do que já foi feito e do que falta verificar, organizado para 
 - [ ] Testar as quatro artes recebidas e concessão das medalhas por primeiro acesso, entrada em grupo, cadastro e aprovação da demanda. A retroatividade dos três marcos de grupo/demanda usa apenas vínculos atuais; verificar exceções.
 - [ ] Entregar em cada versão os textos de issues, release e backlog atualizado.
 
+## Solicitação mais recente — pontuação alpha.10
+
+- [ ] Instalar o novo SQL e a interface; testar criação e edição dos pontos em atividade individual e por grupo.
+- [ ] Verificar que cada aluno recebe pontos ao entregar e que o grupo pontua uma vez ao concluir; confirmar que uma entrega por grupo beneficia os integrantes atuais.
+- [ ] Alterar o valor de uma atividade já entregue e reabrir uma entrega; conferir que os saldos são recalculados e que valores antigos permanecem em 100 quando aplicável.
+- [ ] Mudar um aluno de grupo e confirmar que o saldo individual considera somente o grupo atual, conforme decisão da professora.
+- [ ] Manter prioritárias a exclusão segura dos dois usuários de teste e a integração de upload ao Drive: ambas continuam não implementadas.
+
 ## A fazer — operação e melhorias a decidir
 
 - [ ] Verificar se recuperação e envio de e-mails funcionam para os destinatários esperados; avaliar SMTP adequado quando necessário.
@@ -88,7 +97,7 @@ Registro inicial do que já foi feito e do que falta verificar, organizado para 
 Os itens abaixo serão detalhados antes da implementação. Algumas funções básicas já existem na versão preparada, conforme indicado; o alcance das melhorias ainda será combinado.
 
 - [ ] **Criação de tarefas:** definir como as tarefas deverão ser criadas e acompanhadas. Já existe um cadastro básico de atividades e prazos; verificar o que precisa ser ampliado.
-- [ ] **Criação de pontuação:** definir as regras desejadas. Já existe uma pontuação básica de 100 pontos ao marcar uma atividade como entregue, sem aprovação da professora; avaliar como deve evoluir.
+- [ ] **Pontuação por atividade:** validar no ambiente real a alpha.10, que prepara valor configurável, pontos de aluno e grupo e recálculo. Avaliação/aprovação de entregas e outras regras permanecem a decidir.
 - [ ] **Criação de medalhas:** além da primeira medalha preparada na alpha.6, definir os próximos tipos, critérios para conquista e visualização.
 - [ ] **Criação de importação de usuários:** definir formato dos dados, validações e como será feito o cadastro seguro dos alunos.
 - [ ] **Criação de sistema de entregas de atividades:** definir o fluxo desejado, inclusive formatos e necessidade de avaliação. Atualmente há registro básico de situação, link e observações, mas não um fluxo de aprovação de entregas.
@@ -122,6 +131,7 @@ Os itens abaixo serão detalhados antes da implementação. Algumas funções b�
 - **alpha.6:** primeira medalha; professora informou ter executado o SQL e corrigido a medalha.
 - **alpha.7:** perfil, avaliação de demanda, validação do link e tarefas gerais; professora confirmou arquivos e SQL instalados, outros testes reais pendentes.
 - **alpha.8:** SQL executado segundo relato; arquivos do site incluídos na alpha.9.
-- **alpha.9:** entregas por aluno ou grupo, painel da professora e imagens das medalhas preparados; ainda não instalados nem testados no ambiente real.
+- **alpha.9:** entregas por aluno ou grupo, painel da professora e imagens das medalhas; a professora confirmou aplicação do SQL, testes reais pendentes.
+- **alpha.10:** pontuação configurável por atividade preparada e testada localmente; ainda não instalada no ambiente real.
 
 Este backlog é um documento de trabalho; nenhum item pendente foi implantado ou aprovado apenas por estar listado aqui.

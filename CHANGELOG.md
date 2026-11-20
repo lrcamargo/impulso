@@ -2,6 +2,14 @@
 
 Este arquivo registra alterações relevantes para cada versão. A convenção é baseada em versionamento semântico (SemVer), com pré-lançamentos identificados por `alpha` ou `beta`.
 
+## 0.1.0-alpha.10 — pontuação configurável por atividade
+
+- A professora define e altera os pontos ao criar ou editar uma atividade; zero significa sem pontos.
+- Entrega individual pontua o aluno ao entregar e o grupo quando todos os integrantes atuais entregam; entrega por grupo pontua o grupo e seus integrantes atuais.
+- Pontos são recalculados se o valor ou situação mudar e o saldo pessoal considera apenas o grupo atual.
+- Regra legada de 100 pontos é preservada para atividades já configuradas com pontuação antiga.
+- Testado localmente; exige aplicação do SQL alpha.10. Exclusão de usuários de teste e upload ao Drive permanecem pendentes.
+
 ## 0.1.0-alpha.9 — entregas, painel de alunos e medalhas
 
 - Seleção por atividade entre entrega por grupo ou confirmação de cada integrante atual, com acompanhamento de alunos e grupos pela professora.

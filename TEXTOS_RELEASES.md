@@ -46,3 +46,14 @@ A versão exige o SQL alpha.7. Medalhas adicionais, concessão manual/automátic
 - A versão inclui a interface da alpha.8 e exige somente o novo SQL alpha.9, desde que a alpha.8 esteja aplicada.
 
 **Ainda em desenvolvimento:** exclusão segura dos usuários de teste e seus dados; upload de arquivos ao Google Drive. Não foram implantados por esta versão.
+
+## 0.1.0-alpha.10 — Pontos por atividade
+
+**Rascunho: publique após instalar e validar no ambiente real.**
+
+- A professora pode definir e editar a quantidade de pontos de cada atividade.
+- Nas entregas individuais, cada aluno pontua ao entregar e o grupo pontua quando todos os integrantes atuais concluem. Nas entregas por grupo, o grupo pontua uma vez e cada integrante atual recebe o mesmo valor.
+- O saldo individual considera o grupo atual. Alterações no valor e reabertura de entregas recalculam os pontos, inclusive de entregas anteriores.
+- A regra anterior de 100 pontos é preservada para as atividades que já a utilizavam.
+
+A atualização exige o SQL da alpha.10. Exclusão segura dos usuários de teste e upload ao Drive continuam pendentes.
