@@ -5,9 +5,9 @@ Copie os títulos e descrições para suas issues. Os itens marcados como “em 
 ## Pontuação configurável por atividade
 **Status sugerido:** em validação.
 
-A professora deve informar e editar o valor de pontos de cada atividade, inclusive escolhendo zero. Preservar em 100 as atividades que já usavam a regra anterior.
+O professor deve informar e editar o valor de pontos de cada atividade, inclusive escolhendo zero. Preservar em 100 as atividades que já usavam a regra anterior.
 
-**Critérios:** somente a professora pode definir os pontos; valores inteiros entre 0 e 1.000.000; o valor aparece na atividade e as regras são testadas no Supabase real.
+**Critérios:** somente o professor pode definir os pontos; valores inteiros entre 0 e 1.000.000; o valor aparece na atividade e as regras são testadas no Supabase real.
 
 ## Pontuação individual e do grupo
 **Status sugerido:** em validação.
@@ -19,16 +19,16 @@ Na entrega individual, cada aluno pontua ao entregar e o grupo quando todos os i
 ## Recalcular pontos e considerar grupo atual
 **Status sugerido:** em validação.
 
-Ao alterar o valor de uma atividade ou reabrir uma entrega, recalcular os pontos anteriores. O saldo do aluno considera apenas seu grupo atual, conforme decisão da professora.
+Ao alterar o valor de uma atividade ou reabrir uma entrega, recalcular os pontos anteriores. O saldo do aluno considera apenas seu grupo atual, conforme decisão do professor.
 
 **Critérios:** testar mudança de valor, reabertura, entrada/saída e troca de grupo, incluindo valores antigos de 100 pontos.
 
 ## Exibir pontos para professor e alunos
 **Status sugerido:** em validação.
 
-Mostrar pontuação individual na visão geral e perfil do aluno e para a professora na lista/perfil. Mostrar pontuação do grupo na tela de equipes ou Meu grupo.
+Mostrar pontuação individual na visão geral e perfil do aluno e para o professor na lista/perfil. Mostrar pontuação do grupo na tela de equipes ou Meu grupo.
 
-**Critérios:** conferir os números e o isolamento entre alunos e professoras no ambiente real.
+**Critérios:** conferir os números e o isolamento entre alunos e professores no ambiente real.
 
 ## Excluir usuários de teste e seus dados
 **Status sugerido:** aberta — prioridade alta; não implementada.

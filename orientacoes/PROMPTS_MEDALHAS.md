@@ -14,7 +14,7 @@ Sugestão para todas: PNG quadrado de 1024 × 1024, fundo transparente, sem text
 
 ## 3. Medalha Demanda Aprovada
 
-> Crie uma única medalha digital da mesma coleção visual da medalha Primeiro Acesso da plataforma educacional Impulso. Esta conquista representa uma demanda aprovada pela professora. No centro de uma medalha circular dourada, represente um documento com um sinal de confirmação e pequenas estrelas, transmitindo conquista e avanço. Ilustração vetorial moderna, amigável e elegante, com verde escuro, verde menta e dourado, sombras suaves e bordas nítidas. Medalha centralizada, vista de frente, ocupando cerca de 75% da tela. Formato quadrado 1024 × 1024, fundo transparente. Sem letras, números, textos, logotipos, marcas d’água ou elementos cortados. Gerar apenas uma medalha, não uma grade.
+> Crie uma única medalha digital da mesma coleção visual da medalha Primeiro Acesso da plataforma educacional Impulso. Esta conquista representa uma demanda aprovada pelo professor. No centro de uma medalha circular dourada, represente um documento com um sinal de confirmação e pequenas estrelas, transmitindo conquista e avanço. Ilustração vetorial moderna, amigável e elegante, com verde escuro, verde menta e dourado, sombras suaves e bordas nítidas. Medalha centralizada, vista de frente, ocupando cerca de 75% da tela. Formato quadrado 1024 × 1024, fundo transparente. Sem letras, números, textos, logotipos, marcas d’água ou elementos cortados. Gerar apenas uma medalha, não uma grade.
 
 ## 4. Medalha Primeiro Grupo
 

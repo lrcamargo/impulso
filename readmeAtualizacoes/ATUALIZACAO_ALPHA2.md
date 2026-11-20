@@ -33,14 +33,14 @@ Atualize apenas os arquivos entregues neste pacote na branch/repositório do pro
 
 ## 5. Testar sem usar dados reais
 - Deslogue e envie uma solicitação com nome e e-mail de teste. Ela não deve criar conta nem enviar e-mail.
-- Entre como professora e abra **Solicitações**. Aprove o pedido informando uma senha inicial de teste. Confira que só um professor autenticado pode chamar a função `create-student`.
+- Entre como professor e abra **Solicitações**. Aprove o pedido informando uma senha inicial de teste. Confira que só um professor autenticado pode chamar a função `create-student`.
 - Em outro navegador, entre como aluno. Deve ser exigida uma nova senha diferente da inicial antes de ver qualquer dado. Teste continuar usando a senha inicial e tentar chamar a API diretamente: o acesso deve ser recusado. Troque a senha e confira que o acesso passa a funcionar.
-- Teste o cadastro direto pela professora, uma solicitação recusada, requisição duplicada, conta existente, dois grupos e acessos cruzados. Use apenas credenciais de teste sob seu controle e não as compartilhe aqui.
+- Teste o cadastro direto pelo professor, uma solicitação recusada, requisição duplicada, conta existente, dois grupos e acessos cruzados. Use apenas credenciais de teste sob seu controle e não as compartilhe aqui.
 - Verifique que o cadastro direto no Supabase Auth está bloqueado; o aluno não pode escolher professor, criar conta sem aprovação, ler pedidos alheios ou contornar a tela de troca chamando `impulso_v1`.
 - Monitore a função e possíveis falhas. Se a conexão cair durante o provisionamento, pode restar uma conta incompleta que requer análise manual em Authentication e no banco; não tente apagar usuários de produção sem conferir.
 
 ## Limitações
-- A professora precisa digitar a senha inicial a cada cadastro e entregá-la ao aluno; o sistema não a envia. A mesma senha pode ser reutilizada, mas não é recomendável.
+- O professor precisa digitar a senha inicial a cada cadastro e entregá-la ao aluno; o sistema não a envia. A mesma senha pode ser reutilizada, mas não é recomendável.
 - A alteração obrigatória se aplica a contas criadas pela nova função, não a alunos já existentes.
 - A tela de recuperação por e-mail continua dependendo de SMTP configurado. Sem SMTP, será necessário um processo administrativo de recuperação de conta; ele ainda não está implementado na aplicação.
 - Com confirmação automática administrativa, a instituição deve verificar a identidade e o e-mail por outro processo. Não há prova de posse do endereço por e-mail.

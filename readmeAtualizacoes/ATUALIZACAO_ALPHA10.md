@@ -2,7 +2,7 @@
 
 ## O que muda
 
-A professora pode definir **Pontos da atividade** ao criar ou editar uma atividade. O valor pode ser de 0 a 1.000.000 pontos inteiros; zero significa que ela não concede pontos. O valor aparece na atividade. Pontuação individual aparece na visão geral e no perfil; a pontuação do grupo aparece em Meu grupo. A professora também vê os pontos na lista e no perfil dos alunos e na tela de equipes.
+O professor pode definir **Pontos da atividade** ao criar ou editar uma atividade. O valor pode ser de 0 a 1.000.000 pontos inteiros; zero significa que ela não concede pontos. O valor aparece na atividade. Pontuação individual aparece na visão geral e no perfil; a pontuação do grupo aparece em Meu grupo. O professor também vê os pontos na lista e no perfil dos alunos e na tela de equipes.
 
 ## Regras escolhidas
 
@@ -11,7 +11,7 @@ A professora pode definir **Pontos da atividade** ao criar ou editar uma ativida
 - **Mudança de grupo:** o saldo de um aluno considera apenas o grupo atual. Ao sair do grupo, ele deixa de pontuar por suas atividades anteriores; sem grupo, o saldo é zero. Entrar em outro grupo faz o saldo refletir as entregas desse grupo e suas próprias entregas individuais nele.
 - **Recálculo:** alterar o valor de uma atividade recalcula também as entregas anteriores. Reabrir uma entrega como pendente retira os pontos enquanto ela estiver pendente. Alterar a regra de entrega reinicia as confirmações, conforme a alpha.9; pontos são recalculados.
 - **Medalhas:** pontos são contabilizados ao registrar entrega, independentemente da aprovação da medalha. As regras de medalhas não mudam. Uma tarefa desmembrada não pontua separadamente nesta versão.
-- **Atividades anteriores:** as atividades que já tinham a antiga regra de 100 pontos mantêm o valor 100. Outras começam com 0 e podem ser editadas pela professora. O saldo individual pode passar a ser exibido pela primeira vez para entregas anteriores elegíveis do grupo atual.
+- **Atividades anteriores:** as atividades que já tinham a antiga regra de 100 pontos mantêm o valor 100. Outras começam com 0 e podem ser editadas pelo professor. O saldo individual pode passar a ser exibido pela primeira vez para entregas anteriores elegíveis do grupo atual.
 
 ## Antes de instalar
 
@@ -43,6 +43,6 @@ Depois, copie os arquivos do pacote aos mesmos caminhos, preservando `src/config
 2. Crie outra atividade de 50 pontos **por grupo**. Uma pessoa entrega: o grupo soma 50 e cada integrante atual soma 50.
 3. Mude os 30 para 40; confirme que saldos anteriores são recalculados. Reabra uma entrega e verifique a retirada dos pontos correspondentes.
 4. Retire ou transfira um aluno de teste; confira que seu saldo passa a refletir somente o grupo atual. Teste também uma atividade antiga que já valia 100 pontos.
-5. Confira os pontos no perfil do aluno, em Meu grupo, na lista de alunos da professora e nas equipes. Teste que alunos e professoras não consultam dados de outras turmas via API.
+5. Confira os pontos no perfil do aluno, em Meu grupo, na lista de alunos do professor e nas equipes. Teste que alunos e professores não consultam dados de outras turmas via API.
 
 Os testes de banco e navegador foram locais; no navegador, a rede foi simulada. A alpha.10 não foi aplicada nem testada pelo assistente no Supabase ou site reais. A exclusão segura dos usuários de teste e o upload ao Drive continuam pendentes.

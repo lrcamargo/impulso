@@ -4,7 +4,7 @@ Este arquivo registra alterações relevantes para cada versão. A convenção �
 
 ## 0.1.0-alpha.10 — pontuação configurável por atividade
 
-- A professora define e altera os pontos ao criar ou editar uma atividade; zero significa sem pontos.
+- O professor define e altera os pontos ao criar ou editar uma atividade; zero significa sem pontos.
 - Entrega individual pontua o aluno ao entregar e o grupo quando todos os integrantes atuais entregam; entrega por grupo pontua o grupo e seus integrantes atuais.
 - Pontos são recalculados se o valor ou situação mudar e o saldo pessoal considera apenas o grupo atual.
 - Regra legada de 100 pontos é preservada para atividades já configuradas com pontuação antiga.
@@ -12,18 +12,18 @@ Este arquivo registra alterações relevantes para cada versão. A convenção �
 
 ## 0.1.0-alpha.9 — entregas, painel de alunos e medalhas
 
-- Seleção por atividade entre entrega por grupo ou confirmação de cada integrante atual, com acompanhamento de alunos e grupos pela professora.
-- Painel da professora por aluno com perfil, grupo, demanda, medalhas e situação das atividades e links.
+- Seleção por atividade entre entrega por grupo ou confirmação de cada integrante atual, com acompanhamento de alunos e grupos pelo professor.
+- Painel do professor por aluno com perfil, grupo, demanda, medalhas e situação das atividades e links.
 - Uso das quatro imagens fornecidas para as medalhas de Primeiro Acesso, Primeiro Grupo, Demanda Cadastrada e Demanda Aprovada; retroatividade limitada a grupos/demandas atuais comprováveis.
-- Inclui os arquivos da alpha.8. A professora informou que o SQL alpha.8 já está instalado; a alpha.9 usa novo SQL e não deve reaplicar o anterior.
+- Inclui os arquivos da alpha.8. O professor informou que o SQL alpha.8 já está instalado; a alpha.9 usa novo SQL e não deve reaplicar o anterior.
 - Testes locais passaram; ainda precisa ser instalada e testada no ambiente real.
 - Exclusão segura dos usuários de teste e seus dados, e upload para Google Drive, permanecem pendentes. Nenhuma conta ou dado real foi apagado.
 
 ## 0.1.0-alpha.8 — atividades, tarefas do grupo e medalhas
 
-- Somente a professora cria e edita atividades. O aluno pode criar tarefas em uma atividade para seu grupo e atribuí-las a colegas integrantes.
+- Somente o professor cria e edita atividades. O aluno pode criar tarefas em uma atividade para seu grupo e atribuí-las a colegas integrantes.
 - Visão de atividades unificada para o aluno e cópia dos registros anteriores para o novo modelo, sem exclusão dos dados antigos.
-- Cadastro, edição, vínculo e concessão de medalhas por atividade, de modo automático ou mediante aprovação, além de atribuição manual pela professora.
+- Cadastro, edição, vínculo e concessão de medalhas por atividade, de modo automático ou mediante aprovação, além de atribuição manual pelo professor.
 - A medalha é processada ao marcar a atividade como entregue para os integrantes naquele momento. Não há revogação automática nem aplicação retroativa ao alterar a medalha.
 - Atualização exige SQL e preservação de backup. Testes locais; ainda requer validação real.
 - Upload para Google Drive **não foi implementado** nesta versão; há apenas planejamento. Entregas podem ser registradas por link.
@@ -49,7 +49,7 @@ Este arquivo registra alterações relevantes para cada versão. A convenção �
 
 ### Incluído
 - Ao criar o grupo, o aluno pode pesquisar e selecionar vários colegas, inclusive em buscas diferentes; os colegas recebem convites e só entram ao aceitar.
-- A seleção trata falhas parciais e permite convidar mais tarde. Na página do grupo, o aluno pode cadastrar a demanda por nome e link; a professora complementa os dados.
+- A seleção trata falhas parciais e permite convidar mais tarde. Na página do grupo, o aluno pode cadastrar a demanda por nome e link; o professor complementa os dados.
 - Testes de banco locais para convite, resposta, isolamento entre grupos e permissão de complementar demanda.
 
 ### Atenção
@@ -105,3 +105,8 @@ Este arquivo registra alterações relevantes para cada versão. A convenção �
 - Pré-lançamento: compilado e testado localmente, mas ainda não validado no projeto Supabase real ou na hospedagem.
 - Necessita configurar Supabase, confirmação de e-mail e SMTP; não utilizar com alunos reais até concluir testes de acesso e revisão de segurança.
 - Não há importação automática do SAGA, envio de convites por e-mail, aprovação de entregas, anexos ou backup automático configurado.
+
+## 0.1.0-alpha.11
+- Interface: filtros de demanda, composição das equipes, cards de entregas por atividade e identificação de versão/autoria.
+- Issues consolidadas com histórico e status sugeridos; documentação em linguagem genérica.
+- Ainda pendentes: arquivamento de grupo/demanda, reenvio dos dois tipos de convite e upload de medalhas.

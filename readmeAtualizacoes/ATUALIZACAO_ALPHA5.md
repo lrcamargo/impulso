@@ -7,7 +7,7 @@ O pacote também inclui `BACKLOG.md`, com o que já foi feito e os próximos ite
 1. O aluno acessa **Meu grupo**, clica em **Criar grupo** e informa o nome.
 2. Após salvar, pode pesquisar colegas cadastrados pelo nome ou pelo e-mail completo que já conhece, selecionar um ou mais colegas e clicar em **Enviar convites**. Os e-mails dos colegas não aparecem na tela. Também pode clicar em **Concluir depois** e voltar em **Convidar colegas**.
 3. Cada colega encontra o convite ao entrar na plataforma e pode **Aceitar** ou **Recusar**. Somente após aceitar passa a participar e a ver a demanda do grupo.
-4. Um integrante acessa **Adicionar demanda**, informa o **nome** e o **link** e salva. Não há campo de etapa. A professora acessa **Demandas** e complementa descrição, benefícios esperados, detalhamento, restrições, empresa, área de atuação e data de vigência.
+4. Um integrante acessa **Adicionar demanda**, informa o **nome** e o **link** e salva. Não há campo de etapa. O professor acessa **Demandas** e complementa descrição, benefícios esperados, detalhamento, restrições, empresa, área de atuação e data de vigência.
 
 O convite aparece dentro da plataforma; este fluxo não envia e-mail de convite. Um aluno vê somente seu próprio grupo e sua demanda, além dos convites recebidos. Uma pesquisa pode não encontrar alguém que já tem grupo ou convite pendente. Se algum convite não for enviado, os demais podem já ter sido enviados. Após uma falha de conexão, clique em **Concluir depois** e verifique os convites pendentes antes de tentar novamente.
 

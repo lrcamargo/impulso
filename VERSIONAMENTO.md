@@ -35,3 +35,7 @@ Se for usar terminal, depois de salvar as alterações e estar na branch correta
 - Verificar login e confirmação de e-mail, acesso de professores e alunos, aceite/recusa, isolamento entre equipes e acesso direto à API no Supabase real.
 - Revisar segurança e privacidade, inclusive LGPD, antes de usar dados reais.
 - Confirmar que `CHANGELOG.md`, `package.json` e `package-lock.json` descrevem a mesma versão.
+
+## alpha.11
+
+Atualização incremental de interface sobre a alpha.10, sem novo SQL. Status e próximos passos em `ATUALIZACAO_ALPHA11.md`, `BACKLOG.md` e `orientacoes/TEXTOS_ISSUES.md`.

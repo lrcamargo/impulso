@@ -12,7 +12,7 @@ Esta versão também inclui a edição de nome e e-mail dos alunos, apresentada 
 
 Os alunos podem criar grupos, pesquisar e selecionar colegas cadastrados e enviar convites. Cada colega decide se aceita ou recusa antes de entrar no grupo.
 
-Um integrante informa o nome e o link da demanda escolhida, e a professora complementa os demais dados. Os convites são exibidos na própria plataforma e o aluno vê apenas seu grupo. O cadastro da demanda é manual.
+Um integrante informa o nome e o link da demanda escolhida, e o professor complementa os demais dados. Os convites são exibidos na própria plataforma e o aluno vê apenas seu grupo. O cadastro da demanda é manual.
 
 ## 0.1.0-alpha.6 — Medalha Primeiro Acesso
 
@@ -26,7 +26,7 @@ A atualização exige aplicação do SQL da alpha.6 no Supabase. A recuperação
 
 - Novo perfil do aluno com apelido de exibição, avatar de bichinho, grupo, troca de senha e espaço de medalhas.
 - Tarefas para todos os grupos, com registro de entrega separado para cada equipe, inclusive grupos futuros.
-- Avaliação de demandas pela professora, com motivo quando não aprovadas, reenvio pelo grupo e histórico de avaliações.
+- Avaliação de demandas pelo professor, com motivo quando não aprovadas, reenvio pelo grupo e histórico de avaliações.
 - Validação de novos links no formato de demanda industrial da Saga e ajuste da expressão “na Saga”.
 - Tratamento defensivo de dados incompletos no acesso, ainda sujeito à validação da conta que apresentou erro.
 

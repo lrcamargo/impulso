@@ -1,4 +1,4 @@
-# Atualização alpha.9 — entregas, visão da professora e medalhas
+# Atualização alpha.9 — entregas, visão do professor e medalhas
 
 ## Importante: seu SQL da alpha.8 já foi executado
 
@@ -8,11 +8,11 @@ A exclusão dos usuários de teste e o upload ao Drive **ainda não estão imple
 
 ## O que foi preparado
 
-- **Atividades e tarefas da alpha.8:** somente a professora cria/edita atividades; alunos criam tarefas dentro delas e atribuem responsáveis do próprio grupo. O aluno vê suas atividades e tarefas do grupo, sem a seção separada de tarefas para todos.
-- **Quem entrega:** ao criar ou editar a atividade, a professora escolhe entre uma pessoa registrar a entrega pelo grupo ou cada integrante registrar a sua. No modo individual, a atividade do grupo só fica entregue quando todos os **integrantes atuais** tiverem registrado. Cada aluno só marca sua própria entrega.
-- **Acompanhamento:** em **Atividades e prazos**, a professora pode abrir a situação dos integrantes de cada grupo e ver links e observações. No modo por grupo, o status dos alunos é identificado como “entregue pelo grupo”, não como uma entrega individual.
-- **Perfil do aluno:** em **Alunos**, o botão **Ver perfil** mostra nome, e-mail, apelido, avatar, grupo, demanda, medalhas e atividades/entregas atuais para a professora responsável. Não mostra senhas.
-- **Medalhas:** tela da professora para criar/editar medalhas, atribuir ao aluno, aprovar ou recusar solicitações e escolher concessão automática ou mediante aprovação por atividade. As imagens enviadas foram aplicadas às medalhas Primeiro Acesso, Primeiro Grupo, Demanda Cadastrada e Demanda Aprovada. As medalhas personalizadas usam símbolos provisórios.
+- **Atividades e tarefas da alpha.8:** somente o professor cria/edita atividades; alunos criam tarefas dentro delas e atribuem responsáveis do próprio grupo. O aluno vê suas atividades e tarefas do grupo, sem a seção separada de tarefas para todos.
+- **Quem entrega:** ao criar ou editar a atividade, o professor escolhe entre uma pessoa registrar a entrega pelo grupo ou cada integrante registrar a sua. No modo individual, a atividade do grupo só fica entregue quando todos os **integrantes atuais** tiverem registrado. Cada aluno só marca sua própria entrega.
+- **Acompanhamento:** em **Atividades e prazos**, o professor pode abrir a situação dos integrantes de cada grupo e ver links e observações. No modo por grupo, o status dos alunos é identificado como “entregue pelo grupo”, não como uma entrega individual.
+- **Perfil do aluno:** em **Alunos**, o botão **Ver perfil** mostra nome, e-mail, apelido, avatar, grupo, demanda, medalhas e atividades/entregas atuais para o professor responsável. Não mostra senhas.
+- **Medalhas:** tela do professor para criar/editar medalhas, atribuir ao aluno, aprovar ou recusar solicitações e escolher concessão automática ou mediante aprovação por atividade. As imagens enviadas foram aplicadas às medalhas Primeiro Acesso, Primeiro Grupo, Demanda Cadastrada e Demanda Aprovada. As medalhas personalizadas usam símbolos provisórios.
 
 ## Regras importantes
 

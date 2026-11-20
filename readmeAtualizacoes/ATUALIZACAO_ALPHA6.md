@@ -4,13 +4,13 @@
 
 O aluno que concluir a troca obrigatória da senha inicial recebe a medalha **Primeiro Acesso**, exibida na sua visão geral. A medalha é individual e não acrescenta pontos. A troca da senha e o registro da conquista são confirmados juntos no banco.
 
-A alpha.6 também inclui as melhorias da alpha.5 para grupos e demandas. Os arquivos `BACKLOG.md`, `TEXTOS_ISSUES.md` e `MENSAGEM_CLASSROOM.md` estão no pacote para consulta e uso pela professora.
+A alpha.6 também inclui as melhorias da alpha.5 para grupos e demandas. Os arquivos `BACKLOG.md`, `TEXTOS_ISSUES.md` e `MENSAGEM_CLASSROOM.md` estão no pacote para consulta e uso pelo professor.
 
 ## Limitação da retroatividade
 
-A versão anterior não guardava o histórico da troca de senha: ela apagava o registro pendente ao concluir. Por isso, **a ausência da pendência, sozinha, não prova que alguém trocou a senha**. Ao instalar esta versão, a medalha é concedida automaticamente aos alunos anteriores para os quais há indícios recuperáveis: solicitação aprovada para a mesma professora e e-mail antes do cadastro, conta vinculada e confirmada e nenhuma troca pendente. Isso é uma inferência, não uma data de conquista histórica.
+A versão anterior não guardava o histórico da troca de senha: ela apagava o registro pendente ao concluir. Por isso, **a ausência da pendência, sozinha, não prova que alguém trocou a senha**. Ao instalar esta versão, a medalha é concedida automaticamente aos alunos anteriores para os quais há indícios recuperáveis: solicitação aprovada para a mesmo professor e e-mail antes do cadastro, conta vinculada e confirmada e nenhuma troca pendente. Isso é uma inferência, não uma data de conquista histórica.
 
-Alunos cadastrados diretamente, alunos antigos e alguns que mudaram o e-mail podem não ser identificáveis automaticamente, mesmo se já tiverem trocado a senha. Eles não recebem automaticamente uma medalha não comprovada; a professora poderá conferir os casos e, se necessário, pedir orientação para registrá-los manualmente. Todos que concluírem a troca obrigatória após instalar a alpha.6 recebem a medalha automaticamente. O registro não expõe dados de outros alunos.
+Alunos cadastrados diretamente, alunos antigos e alguns que mudaram o e-mail podem não ser identificáveis automaticamente, mesmo se já tiverem trocado a senha. Eles não recebem automaticamente uma medalha não comprovada; o professor poderá conferir os casos e, se necessário, pedir orientação para registrá-los manualmente. Todos que concluírem a troca obrigatória após instalar a alpha.6 recebem a medalha automaticamente. O registro não expõe dados de outros alunos.
 
 ### Conferir um caso anterior manualmente
 
@@ -64,7 +64,7 @@ select
 ## Verificar antes de divulgar
 
 - Com um aluno de teste recém-cadastrado, entre com a senha inicial e confirme que a medalha só aparece depois de criar e confirmar uma nova senha pessoal.
-- Recarregue a página e acesse novamente: a conquista deve continuar visível. A professora não recebe essa medalha.
+- Recarregue a página e acesse novamente: a conquista deve continuar visível. O professor não recebe essa medalha.
 - Teste um aluno antigo e observe a limitação da retroatividade acima. Confira que outro aluno não consegue consultar a conquista de terceiros.
 - Teste criação de grupo, convites, aceite/recusa e cadastro/complementação de demanda. Se aplicável, teste também edição de aluno.
 - O arquivo `MENSAGEM_CLASSROOM.md` é um rascunho para usar **depois** de instalar e testar; preencha o link real e as orientações antes de publicar.

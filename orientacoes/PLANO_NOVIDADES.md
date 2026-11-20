@@ -12,11 +12,11 @@
 
 ## Publicação e segurança
 
-- Inicialmente, as notas podem acompanhar as versões do código, com identificadores fixos e conteúdo revisado pela professora. No futuro, pode existir uma tela administrativa para publicar e retirar avisos.
-- O registro de leitura deve ser salvo no banco por usuário autenticado, sem depender somente do navegador. Cada aluno só pode consultar/alterar seu próprio registro; a professora decide se precisa de algum relatório agregado.
+- Inicialmente, as notas podem acompanhar as versões do código, com identificadores fixos e conteúdo revisado pelo professor. No futuro, pode existir uma tela administrativa para publicar e retirar avisos.
+- O registro de leitura deve ser salvo no banco por usuário autenticado, sem depender somente do navegador. Cada aluno só pode consultar/alterar seu próprio registro; o professor decide se precisa de algum relatório agregado.
 - Não mostrar avisos antes da troca obrigatória de senha. Tratar falha de rede sem bloquear o uso da plataforma e sem marcar como lido automaticamente.
 - Evitar coleta de informações desnecessárias; registrar apenas identificador da novidade, usuário e momento da confirmação, se esse horário for útil.
 
 ## Antes de implementar
 
-Confirmar se o aviso será para todos os usuários ou apenas alunos, se as notas serão escritas pela professora no sistema e se ela precisa saber quem leu. Implementar testes de primeiro acesso, múltiplos dispositivos, privacidade e falhas de rede.
+Confirmar se o aviso será para todos os usuários ou apenas alunos, se as notas serão escritas pelo professor no sistema e se ela precisa saber quem leu. Implementar testes de primeiro acesso, múltiplos dispositivos, privacidade e falhas de rede.
