@@ -39,3 +39,7 @@ Se for usar terminal, depois de salvar as alterações e estar na branch correta
 ## alpha.11
 
 Atualização incremental de interface sobre a alpha.10, sem novo SQL. Status e próximos passos em `ATUALIZACAO_ALPHA11.md`, `BACKLOG.md` e `orientacoes/TEXTOS_ISSUES.md`.
+
+## alpha.12
+
+Incremental sobre alpha.11, com SQLs 008 e 009 em `database-updates/`. Veja `ATUALIZACAO_ALPHA12.md`.

@@ -55,3 +55,5 @@ Leia [ATUALIZACAO_ALPHA9.md](ATUALIZACAO_ALPHA9.md) antes de instalar. Inclui a 
 Leia [ATUALIZACAO_ALPHA10.md](ATUALIZACAO_ALPHA10.md) antes de instalar a pontuação configurável.
 
 Atualização atual: consulte `ATUALIZACAO_ALPHA11.md`.
+
+Atualização mais recente: `ATUALIZACAO_ALPHA12.md`.

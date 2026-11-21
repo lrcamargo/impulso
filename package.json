@@ -1,6 +1,6 @@
 {
   "name": "impulso-projetos",
-  "version": "0.1.0-alpha.11",
+  "version": "0.1.0-alpha.12",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node tests/db.test.mjs && node tests/access-requests.test.mjs && node tests/edit-student.test.mjs && node tests/groups-and-projects.test.mjs && node tests/first-access-medal.test.mjs && node tests/profile-general-tasks.test.mjs && node tests/activities-and-badges.test.mjs && node tests/individual-deliveries.test.mjs && node tests/individual-backfill.test.mjs && node tests/activity-points.test.mjs"
+    "test": "node tests/db.test.mjs && node tests/access-requests.test.mjs && node tests/edit-student.test.mjs && node tests/groups-and-projects.test.mjs && node tests/first-access-medal.test.mjs && node tests/profile-general-tasks.test.mjs && node tests/activities-and-badges.test.mjs && node tests/individual-deliveries.test.mjs && node tests/individual-backfill.test.mjs && node tests/activity-points.test.mjs && node tests/group-admin.test.mjs && node tests/badge-images.test.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.0"

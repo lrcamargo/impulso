@@ -149,3 +149,9 @@ Este backlog é um documento de trabalho; nenhum item pendente foi implantado ou
 | Reenviar convites de grupo e de acesso | Pendente; mecanismos diferentes, definir notificações e SMTP. |
 | Upload de imagem e gestão ampliada de medalhas | Pendente; escolha por Supabase Storage, segurança e limites a implementar. Ícones, listagem e edição já existem. |
 | Exclusão segura dos usuários de teste e upload de entregas ao Drive | Pendentes; não realizados. |
+
+## Alpha.12 — situação atual
+
+Filtros de demanda em botões, contagem simplificada, versão centralizada e catálogo de medalhas fixas: preparados, testar no ambiente real. Filtro de alunos sem grupo, alocação direta e limite de cinco: preparados com SQL novo, testar permissões e concorrência. Lembrete de convite de equipe na plataforma e mensagem copiável de acesso: preparados. Medalhas criadas com imagem pública no Supabase Storage ou ícone: preparado, validar políticas e upload reais; exclusão e limpeza de imagens órfãs pendentes. Arquivamento de equipe/demanda, exclusão segura de usuários teste e upload de entregas ao Drive continuam pendentes.
+
+- Pesquisa de alunos e equipes (issue #15): adicionada à alpha.12 para validação; filtro de alunos sem grupo indica convites pendentes. Veja a revisão completa em `ISSUES_GITHUB_ALPHA12.md`.

@@ -1,4 +1,4 @@
-# Issues acumuladas do Impulso — atualização alpha.11
+# Issues acumuladas do Impulso — atualização alpha.12
 
 Copie cada título e descrição para uma issue. Os status são sugeridos: **feche como concluída apenas se o resultado estiver confirmado no ambiente que você usa**. “Preparado” significa que há código e testes locais, não que já foi publicado ou validado no Supabase real. As issues antigas mencionadas abaixo são uma proposta de registro; não consultamos as issues existentes nem alteramos nenhuma delas.
 
@@ -103,12 +103,12 @@ Copie cada título e descrição para uma issue. Os status são sugeridos: **fec
 **Descrição:** Definir como alunos entregarão atividades e se o professor avaliará ou aprovará. Existe registro básico de situação, link e observações; fluxo de aprovação ainda não existe.
 
 ## 15. Pesquisar alunos e grupos
-**Status sugerido:** aberta — planejamento.
+**Status sugerido:** em validação — pesquisa de alunos e equipes preparada na alpha.12; validar no site real.
 
-**Descrição:** Criar uma forma de o professor pesquisar e localizar alunos e grupos. Definir filtros e informações exibidas, mantendo as regras de privacidade.
+**Descrição:** Pesquisa do responsável por nome, e-mail ou equipe na lista de alunos e por nome da equipe ou integrante na tela de equipes. O filtro de alunos sem grupo combina com a pesquisa. Alunos continuam sem acesso à lista administrativa.
 
 ## 16. Identificar alunos sem grupo
-**Status sugerido:** aberta — planejamento.
+**Status sugerido:** em validação — filtro e alocação direta preparados na alpha.12; testar com contas reais.
 
 **Descrição:** Permitir que o professor identifique alunos que ainda não participam de um grupo, por exemplo com lista ou filtro. Definir como distinguir convites pendentes.
 
@@ -367,17 +367,17 @@ Permitir arquivar grupo sem apagar histórico, liberando os alunos para outro gr
 Arquivar somente a demanda preservando histórico e mantendo a equipe ativa para cadastrar outra. Definir o destino de atividades, entregas e pontuação vinculadas e impedir exposição indevida. Prévia, confirmação e teste real.
 
 ## A11-3. Reenviar convite de grupo
-**Status sugerido:** aberta — não implementada.
+**Status sugerido:** em validação — lembrete na plataforma implementado na alpha.12; não envia e-mail.
 
-Permitir ao responsável reenviar/lembrete de convite pendente na plataforma sem criar convites duplicados nem efetuar entrada automática. Definir como o aluno será notificado e evitar vazamento de dados.
+Lembrete marca o convite pendente para o aluno dentro da plataforma, sem duplicar convite, enviar e-mail ou efetuar entrada automática. Validar no site real.
 
 ## A11-4. Reenviar convite de acesso
-**Status sugerido:** aberta — não implementada.
+**Status sugerido:** em validação — mensagem copiável implementada na alpha.12, enviada manualmente.
 
-Projetar convite e reenvio seguros por e-mail para conta ainda não acessada, sem revelar senhas, com limites e configuração de SMTP; validar fluxo no Supabase e não presumir que o cadastro atual já é um convite por e-mail.
+O responsável pode copiar uma mensagem sem senha e enviá-la individualmente. O site não envia e-mail e não comprova se o aluno já acessou.
 
 ## A11-5. Filtro de demandas
-**Status sugerido:** em validação — interface preparada na alpha.11.
+**Status sugerido:** em validação — botões arredondados preparados na alpha.12.
 
 Filtros para aprovadas, reprovadas, aguardando avaliação e dados complementados; preenchimento é independente do estado de aprovação. Validar dados reais.
 
@@ -387,9 +387,9 @@ Filtros para aprovadas, reprovadas, aguardando avaliação e dados complementado
 Verde para 5, vermelho abaixo de 3, amarelo para 3 ou 4, com texto e contagem. Confirmar com grupos reais.
 
 ## A11-7. Catálogo e imagens de medalhas
-**Status sugerido:** parcialmente preparado; upload pendente.
+**Status sugerido:** em validação — ícones e upload de imagens pelo Storage preparados na alpha.12; exclusão pendente.
 
-Já existe criação, listagem, edição e concessão de medalhas com ícones. Implementar upload direto de imagens no Supabase Storage, com autenticação, controle de permissões, limite de tamanho, validação de tipo, tratamento de arquivos órfãos e política de exclusão; definir se é possível remover medalha já concedida e seu efeito sobre histórico. Sem binários no banco.
+Criação, edição e concessão de medalhas com ícones ou imagens; bucket público no Supabase Storage e limite de 2 MiB. Revisar políticas existentes e testar isolamento real. Definir remoção de medalhas concedidas e gestão segura de arquivos órfãos. Sem binários no banco.
 
 ## A11-8. Visualização das entregas
 **Status sugerido:** em validação — interface preparada na alpha.11.
@@ -397,7 +397,7 @@ Já existe criação, listagem, edição e concessão de medalhas com ícones. I
 Agrupar cards por atividade, com status por grupo e integrantes em texto e cor. Conferir links, reabertura, celulares e acessibilidade no site real.
 
 ## A11-9. Versão e autoria no site
-**Status sugerido:** em validação — preparado na alpha.11.
+**Status sugerido:** em validação — texto centralizado e versão atualizados na alpha.12.
 
 Mostrar versão e autoria “Letícia Rosa Camargo” na interface. Confirmar após atualização.
 
@@ -410,3 +410,22 @@ Executar `npm ci` na pasta do projeto com dependências de desenvolvimento insta
 **Status sugerido:** em validação.
 
 Consolidar sugestões anteriores em um único arquivo, preservar referências históricas, sinalizar duplicadas e manter status atualizado a cada entrega. Não houve consulta nem alteração das issues do GitHub. Usar linguagem genérica nos documentos.
+
+## A12-1. Exibir medalhas fixas no catálogo
+**Status sugerido:** em validação — preparado na alpha.12.
+
+Mostrar Primeiro Acesso, Primeiro Grupo, Demanda Cadastrada e Demanda Aprovada com arte e critérios. Não tratá-las como medalhas criadas editáveis.
+
+## A12-2. Impor limite de cinco integrantes
+**Status sugerido:** em validação — preparado na alpha.12.
+
+Proteger aceite e alocação no servidor. Não remover automaticamente equipes preexistentes acima do limite. Testar concorrência real e comunicação ao aluno com convite pendente.
+
+## A12-3. Arquivamento e pontuação
+**Status sugerido:** aberta — não implementada.
+
+Arquivar demanda preservando histórico e desconsiderando pontos de atividades vinculadas enquanto arquivada; permitir nova demanda na equipe ativa. Arquivar equipes preservando histórico e liberando alunos, sem reingresso automático ao restaurar. Planejar isolamento, reversão, concorrência, convites, tarefas, pontuação e medalhas. Relacionar às issues A11-1 e A11-2; não duplicar.
+
+## Referência aos números do GitHub
+
+A revisão das issues reais, com números e critérios, está em `ISSUES_GITHUB_ALPHA12.md`. Esses números não são necessariamente os mesmos da numeração histórica deste arquivo. Nenhuma alteração foi feita no GitHub.

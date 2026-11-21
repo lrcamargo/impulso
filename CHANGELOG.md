@@ -110,3 +110,11 @@ Este arquivo registra alterações relevantes para cada versão. A convenção �
 - Interface: filtros de demanda, composição das equipes, cards de entregas por atividade e identificação de versão/autoria.
 - Issues consolidadas com histórico e status sugeridos; documentação em linguagem genérica.
 - Ainda pendentes: arquivamento de grupo/demanda, reenvio dos dois tipos de convite e upload de medalhas.
+
+## 0.1.0-alpha.12
+- Filtros em botões, contagem simplificada, autoria centralizada e exibição das medalhas fixas.
+- Alocação direta, limite de cinco no banco e lembrete de convite de equipe; acesso via mensagem copiável.
+- Upload opcional de imagem pública no Storage para medalhas criadas. SQLs 008 e 009.
+- Arquivamento, exclusão de usuários teste e upload de entregas ao Drive continuam pendentes.
+
+- Complemento da mesma alpha.12: pesquisa administrativa de alunos e equipes e indicação de convites pendentes no filtro de alunos.
